@@ -1,0 +1,11 @@
+.logo {
+  color: aliceblue;
+  background-color: rgb(2, 173, 59);
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.main {
+  color: rgb(2, 173, 59);
+  font-size: 50px;
+}
