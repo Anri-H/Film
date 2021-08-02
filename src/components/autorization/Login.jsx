@@ -13,7 +13,7 @@ const inputTitle = classNames("green", "left-text");
 
 export default function Login() {
   return (
-    <Row align="middle">
+    <Row align="middle" style={{ padding: "20px" }}>
       <Col flex={3}>
         <Logo />
       </Col>
