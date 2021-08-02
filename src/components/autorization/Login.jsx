@@ -19,7 +19,14 @@ export default function Login() {
       </Col>
       <Col flex={2}>
         <div className="form">
-          <Avatar shape="square" size={64} icon={<UserOutlined />} />
+          <Avatar
+            style={{
+              color: "#52c41a",
+              backgroundColor: "rgba(255, 255, 255, 0)",
+            }}
+            size={64}
+            icon={<UserOutlined />}
+          />
 
           <h1 className="green">Sign In</h1>
           <Formik
