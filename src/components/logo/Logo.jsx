@@ -1,4 +1,5 @@
-import "./logo.css";
+import "./logo.less";
+
 
 export default function Logo(){
     return (
