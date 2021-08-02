@@ -1,4 +1,4 @@
-import "./App.css";
+import './App.less';
 import Login from "./components/autorization/Login";
 
 function App() {
