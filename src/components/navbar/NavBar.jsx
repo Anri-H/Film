@@ -3,24 +3,23 @@ import { Col, Menu, Row, Input } from "antd";
 import Logo from "../logo/Logo";
 import "./navbar.less";
 
-const onSearch = ({ target }) => {
-  console.log(target.value);
-};
 
-export default function NavBar() {
+
+export default function NavBar({onChange}) {
+  const onSearch = ({ target }) => {
+  onChange(target.value);
+};
   return (
     <Menu style={{ padding: "20px", backgroundColor: "#333" }}>
-      <Row key="1" justify="space-between" align="middle">
-        <Col flex="300px" key="1">
+      <Row  justify="space-between" align="middle">
+        <Col flex="300px" style={{height:"100px"}} >
           <Logo />
         </Col>
-        <Col flex="auto" key="1">
+        <Col flex="500px" >
           <Input placeholder="Search" onChange={onSearch} />
         </Col>
-        <Col flex="100px" key="2">
-          <LikeOutlined className="icon" />
-        </Col>
-        <Col flex="100px" key="3">
+        <Col flex="150px" >
+          <LikeOutlined className="icon" />    
           <LogoutOutlined className="icon" />
         </Col>
       </Row>
