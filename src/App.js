@@ -1,12 +1,12 @@
 import "./App.less";
-import Login from "./components/autorization/Login";
-// import NavBar from "./components/navbar/NavBar";
+import Movies from "./components/movies/Movies";
+// import Login from "./components/autorization/Login";
 
 function App() {
   return (
     <div className="App">
-      {/* <NavBar /> */}
-      <Login />
+      <Movies />
+      {/* <Login /> */}
     </div>
   );
 }
