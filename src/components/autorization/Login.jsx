@@ -44,7 +44,7 @@ export default function Login() {
             })}
             onSubmit={async (values) => {
               await new Promise((r) => setTimeout(r, 500));
-              alert(JSON.stringify(values, null, 2));
+              alert("The site is not working at the moment, please try again later");
             }}
           >
             <Form>
