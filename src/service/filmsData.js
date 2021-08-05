@@ -23,7 +23,7 @@ export function getMoviesByPage(page) {
 export function getMovieById(id) {
   return axios
     .get(`${API_URL}movie/${id}?api_key=${API_KEY}&language=en-US`)
-    .then((res) => res.json())
+    .then((res) => res.data)
     .catch((err) => console.log(err));
 }
 
